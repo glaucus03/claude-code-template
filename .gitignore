@@ -48,6 +48,8 @@ Thumbs.db
 .claude/tmp/
 .claude/cache/
 
+# .claude/settings.local.json はテンプレートとして含める
+
 # 依存関係（言語固有）
 node_modules/
 bower_components/

@@ -81,6 +81,48 @@ go.sum
 }
 ```
 
+## 📋 Slash Commands
+
+`.claude/commands/` ディレクトリに仕様書駆動開発をサポートするコマンドが含まれています：
+
+### 基本的なワークフロー
+
+1. **`/steering-init`** - プロジェクトの基本ドキュメントを初期化
+   - product.md（プロダクト概要）
+   - tech.md（技術スタック）
+   - structure.md（プロジェクト構造）
+
+2. **`/spec-init`** - 新機能の仕様書作成プロセスを開始
+
+3. **`/spec-requirements`** - 要件定義書を作成
+
+4. **`/spec-design`** - 技術設計書を作成
+
+5. **`/spec-tasks`** - 実装タスクリストを作成
+
+6. **`/spec-status`** - プロジェクトの進捗状況を確認
+
+7. **`/steering-update`** - 実装完了後、ステアリングドキュメントを更新
+
+### 使用例
+
+```
+# プロジェクト開始時
+/steering-init
+
+# 新機能開発時
+/spec-init ユーザー認証機能を追加したい
+/spec-requirements
+/spec-design
+/spec-tasks
+
+# 進捗確認
+/spec-status
+
+# 完了後
+/steering-update
+```
+
 ## 📚 CLAUDE.mdの書き方
 
 `CLAUDE.md` には以下の情報を記載してください：
